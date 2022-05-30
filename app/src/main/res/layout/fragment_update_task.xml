@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light"
+    android:background="@color/material_dynamic_primary90"
     android:padding="15dp"
     tools:context=".fragments.UpdateTaskFragment">
 
@@ -12,20 +12,20 @@
         android:id="@+id/updateBackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_light"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:background="@color/material_dynamic_primary90"
         android:src="@drawable/back_arrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white" />
+        app:tint="@color/Dark_green_blue" />
 
 
     <EditText
         android:id="@+id/update_title_input"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="65dp"
         android:background="@drawable/custom_update"
         android:ems="10"
         android:hint="Title"
@@ -33,16 +33,14 @@
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/update_task_input"
         android:layout_width="360dp"
-        android:layout_height="320dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="100dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/custom_update"
         android:ems="10"
         android:gravity="start|top"
@@ -51,7 +49,6 @@
         android:paddingStart="15dp"
         android:paddingTop="15dp"
         android:paddingEnd="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
@@ -62,6 +59,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="update and save"
+        android:backgroundTint="@color/Dark_green_blue"
+        android:textColor="@color/material_dynamic_primary90"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,9 +70,13 @@
         android:id="@+id/deleteTaskBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/material_dynamic_primary90"
         android:src="@drawable/delete_all"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/Dark_green_blue" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,7 +51,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/taskListView"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         android:paddingStart="15dp"
         android:paddingTop="15dp"
         android:paddingEnd="15dp"
@@ -69,8 +69,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="100dp"
-        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_marginEnd="80dp"
+        android:alpha="0.5"
+        android:backgroundTint="@color/material_dynamic_primary90"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/add_task"
@@ -81,15 +82,16 @@
 
     <ImageButton
         android:id="@+id/deleteAllBtn"
+        android:alpha="0.5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_button_background"
         android:src="@drawable/delete_all"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskListView"
-        app:tint="@color/Hot_pink" />
+        app:tint="@color/Dark_green_blue" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
